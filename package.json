@@ -1,8 +1,13 @@
 {
   "name": "@dgoguerra/share-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Share a file or script output through Ngrok with auth",
-  "keywords": ["cli", "ngrok", "share", "remote"],
+  "keywords": [
+    "cli",
+    "ngrok",
+    "share",
+    "remote"
+  ],
   "author": "dgoguerra.or@gmail.com",
   "bin": {
     "share": "cli.js"
