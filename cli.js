@@ -13,6 +13,11 @@ const rand = (bytes = 4) => crypto.randomBytes(bytes).toString("hex");
   const file = process.argv[2] && path.resolve(process.argv[2]);
   const app = express();
 
+  if (!file) {
+    console.log("Warning: no file argument, streaming stdin.");
+    console.log("");
+  }
+
   app.get("/", (req, res) => {
     const stream = file ? fs.createReadStream(file) : process.stdin;
     res.writeHead(200, { "Content-Type": "text/event-stream" });
