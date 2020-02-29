@@ -1,6 +1,6 @@
 {
   "name": "@dgoguerra/share-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "dgoguerra.or@gmail.com",
   "bin": {
     "share": "cli.js"
